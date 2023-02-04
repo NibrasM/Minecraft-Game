@@ -1,75 +1,144 @@
+@import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@200&family=Source+Sans+Pro:wght@200&display=swap");
 #all-page {
-   display: flex; 
+  display: flex;
+  flex-direction: column;
+  justify-items: space-around;
+  font-family: "DotGothic16", sans-serif;
+  background-color: rgb(88, 82, 76);
+  color: white;
 }
 
 #game-board {
-    width: 100vmin;
-    height: 100vmin;
-    display: grid;
-    grid-template-rows: repeat(21, 1fr);
-    grid-template-columns: repeat(21, 1fr);
+  width: 100vmin;
+  height: 80vmin;
+  margin-left: 30%;
+  display: grid;
+  grid-template-rows: repeat(21, 1fr);
+  grid-template-columns: repeat(21, 1fr);
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 30px;
+}
+
+#tool-bar {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
 }
 
 #tools {
-    background-color: black;
-    width: 40vmin;
-    height: 50vmin;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-    padding-left: 5rem;
+  width: 30vmin;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-left: 1rem;
 }
 
-#axe{
-    background-image: url("../images/axe.png");
-    object-fit: cover;
-    width: 180px;
-    height: 170px;
+#inventory {
+  background-color: transparent;
+  width: 30vmin;
+  font-size: 60px;
 }
 
-#pickaxe{
-    background-image: url("../images/pickaxe.png");
-    width: 180px;
-    height: 170px;
+#inventory img {
+  object-fit: cover;
+  width: 15rem;
+  height: 10rem;
+  border-radius: 15px;
+  padding: 10px;
 }
 
-#shovel{
-    background-image: url("../images/shovel.png");
-    object-fit: cover;
-    width: 200px;
-    height: 200px;
+#inventory p {
+  text-align: center;
 }
 
-.blocks{
-    background-image: url("../images/blocks.png");
-    object-fit: cover;   
+#reset,
+#theme {
+  background-color: transparent;
+  border: 7px dashed white;
+  border-radius: 15px;
+  padding: 20px;
+  color: white;
+  font-size: 80px;
+  font-family: "DotGothic16", sans-serif;
+  font-weight: bold;
+  margin-top: 3%;
+  text-align: center;
 }
 
-.grass{
-    background-image: url("../images/grass.png");
-    object-fit: cover;
+#axe,
+#pickaxe,
+#shovel {
+  object-fit: cover;
+  width: 180px;
+  height: 170px;
 }
 
-.grass:hover{
-    border: 5px sloid white;
+.blocks {
+  background-image: url("../images/blocks.png");
+  object-fit: cover;
 }
 
-.dirt{
-    background-image: url("../images/rocks.png");
-    object-fit: cover;
+.grass {
+  background-image: url("../images/grass.png");
+  object-fit: cover;
 }
 
-.sky{
-    background-image: url("../images/sky.png");
-    object-fit: cover;
+.dirt {
+  background-image: url("../images/dirt2.png");
+  object-fit: cover;
 }
 
-.wood{
-    background-image: url("../images/wood.png");
-    object-fit: cover;
+.flowers {
+  background-image: url("../images/flowers.png");
+  object-fit: cover;
+}
+.sky {
+  background-image: url("../images/sky.png");
+  object-fit: cover;
 }
 
-.cloud{
-    background-color: aliceblue;
-    object-fit: cover;
+.wood {
+  background-image: url("../images/wood.png");
+  object-fit: cover;
+}
+
+.blocks1 {
+  background-image: url("../images/blocks1.png");
+  object-fit: cover;
+}
+
+.grass1 {
+  background-image: url("../images/grass.png");
+  object-fit: cover;
+}
+
+.dirt1 {
+  background-image: url("../images/dirt.png");
+  object-fit: cover;
+}
+
+.sky1 {
+  background-color: gray;
+  object-fit: cover;
+}
+
+.wood1 {
+  background-image: url("../images/wood.png");
+  object-fit: cover;
+}
+
+.cloud {
+  background-color: white;
+  object-fit: cover;
+}
+
+.selected {
+  border: 7px dashed white;
+  border-radius: 15px;
 }

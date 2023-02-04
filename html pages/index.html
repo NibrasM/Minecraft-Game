@@ -6,17 +6,57 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Document</title>
     <link rel="stylesheet" href="../Css Pages/index.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@200&family=Source+Sans+Pro:wght@200&display=swap"
+      rel="stylesheet"
+    />
+
     <script src="../JS Pages/game.js" defer type="module"></script>
   </head>
   <body>
     <div id="all-page">
       <div id="game-board"></div>
-      <div id="tools">
-        <button id="axe"></button>
-        <button id="pickaxe"></button>
-        <button id="shovel"></button>
-        <button id="inventory">inventory</button>
-        <button id="refresh">REFRESH</button>
+      <div id="tool-bar">
+        <div class="container">
+          <h1>Tools</h1>
+          <div id="tools">
+            <img id="axe" src="../images/axe2.png" />
+            <img id="pickaxe" src="../images/pickaxe2.png" />
+            <img id="shovel" src="../images/shovel2.png" />
+          </div>
+        </div>
+        <div class="container">
+          <h1>Inventory</h1>
+          <table id="inventory">
+            <tr>
+              <td></td>
+              <td rowspan="2">
+                <img id="garssCountContainer" src="../images/grass.png" />
+              </td>
+
+              <td></td>
+              <td rowspan="2">
+                <img id="blocksCountContainer" src="../images/blocks.png" />
+              </td>
+
+              <td></td>
+              <td rowspan="2">
+                <img id="dirtCountContainer" src="../images/dirt2.png" />
+              </td>
+            </tr>
+            <tr>
+              <td colspan="2"><p id="grassCount">0</p></td>
+
+              <td colspan="2"><p id="blocksCount">0</p></td>
+
+              <td colspan="2"><p id="dirtCount">0</p></td>
+            </tr>
+          </table>
+        </div>
+        <button id="reset">Reset</button>
+        <button id="theme">Ghange Theme</button>
       </div>
     </div>
   </body>
