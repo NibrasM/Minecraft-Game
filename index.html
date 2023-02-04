@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Minecraft Game</title>
+    <style>
+      @import url("https://fonts.googleapis.com/css2?family=DotGothic16&family=Montserrat:wght@200&family=Source+Sans+Pro:wght@200&display=swap");
+      * {
+        font-family: "DotGothic16", sans-serif;
+      }
+
+      #welcome {
+        background-color: bisque;
+        padding: 20px;
+      }
+
+      #start {
+        margin-left: 40%;
+
+        background-color: transparent;
+        border: 3px dashed black;
+        border-radius: 5px;
+        padding: 10px;
+        font-size: 20px;
+        font-family: "DotGothic16", sans-serif;
+        font-weight: bold;
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="welcome">
+      <h1>Welcome To Minecraft Game Created By Nibras Misk</h1>
+      <ul>
+        <h3>Game Rules</h3>
+
+        <li>You will have 3 types of tools:</li>
+        <ol>
+          <li>Axe - for cutting trees</li>
+          <li>Pickaxe - for mining rocks</li>
+          <li>Shovel - for digging dirt</li>
+        </ol>
+        <li>
+          Clicking on a tool followed by clicking on a tile in the world will
+          remove the tile. (If it is of the correct type according to #1) and it
+          will be added to the inventory.
+        </li>
+        <li>
+          You can click on the tile in the inventory and place it back in the
+          world.
+        </li>
+      </ul>
+      <button id="start">Start Game</button>
+    </div>
+  </body>
+
+  <script>
+    const startBtn = document.getElementById("start");
+
+    startBtn.addEventListener("click", (event) => {
+      event.preventDefault();
+
+      window.location = "../html-pages/index1.html";
+    });
+  </script>
+</html>
