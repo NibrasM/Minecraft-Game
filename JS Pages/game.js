@@ -59,6 +59,7 @@ const initMap = [
   [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
   [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
   [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
+  [5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5, 5],
 ];
 
 function drawMap() {
@@ -272,7 +273,7 @@ theme.addEventListener("click", (event) => {
     blocksCountContainer.src = "../images/blocks.png";
   } else if (themeNum === 0) {
     themeNum = 1;
-    grassCountContainer.src = "../images/grass.png";
+    grassCountContainer.src = "../images/grass1.png";
     dirtCountContainer.src = "../images/dirt.png";
     blocksCountContainer.src = "../images/blocks1.png";
   }
